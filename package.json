@@ -22,7 +22,7 @@
     "release:android": "cd android && rm -rf app/src/main/res/drawable-* && ./gradlew assembleRelease && cd - && echo 'APK generated in ./android/app/build/outputs/apk/release/app-release.apk'",
     "clean": "npx react-native-clean-project",
     "clean-all": "npx react-native clean-project-auto",
-    "expo:start": "expo start",
+    "expo:start": "expo start --dev-client",
     "expo:android": "expo start --android",
     "expo:ios": "expo start --ios",
     "expo:web": "expo start --web"
@@ -42,6 +42,7 @@
     "expo": "^48.0.15",
     "expo-application": "~5.1.1",
     "expo-constants": "~14.2.1",
+    "expo-dev-client": "^2.2.1",
     "expo-device": "~5.2.1",
     "expo-file-system": "~15.2.1",
     "expo-font": "~11.1.1",
